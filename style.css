@@ -17,6 +17,75 @@ body {
     display: flex;
     justify-content: center;
 }
+header{
+        padding 20px 50px;
+        
+
+    
+
+}
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  
+}
+.logo{
+    margin-top: auto;
+    margin-left: 0px;
+    margin-bottom: auto;
+    margin-right: auto;
+    height: 20px;
+}
+.menu{
+    margin: 20px;
+    display: block;
+      
+}
+.menu a{
+    text-decoration: none;
+    margin: 10px; 
+    color: black;
+}
+.menu a:hover{
+color: #0065FC;
+}
+.menu a:active{
+    border-top: #0065FC 4px solid;
+    padding-top: 15px;
+
+}
+h1{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.search-bar{
+
+    display:inline-block;  
+    
+}
+.search-bar img{
+padding: 20px;
+background-color: red;
+border-radius: 20px;
+}
+button{
+    padding: 20px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    
+}
+input{
+    border: none;
+   
+    padding: 20px;
+}
+.filtres{
+    background-color: #0065FC;
+    height: 60px;
+}
 
 .main-container {
     width: 100%;
