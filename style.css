@@ -2,6 +2,9 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 
 :root {
     --main-color: #0065FC;
@@ -18,10 +21,8 @@ body {
     justify-content: center;
 }
 header{
-        padding 20px 50px;
         
-
-    
+         
 
 }
 nav{
@@ -184,7 +185,31 @@ input{
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/********** ACTIVITES ***********/
 
+.activités{
+    background-color: red;
+}
+
+/* *******FOOTER******/
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items:flex-start;
+    justify-content: flex-start;
+    gap: 190px;
+    background-color: #F2F2F2;
+    height: 100px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.footer-1{
+    display: flex;
+    flex-flow: column wrap;
+    
+
+}
 
 
 
