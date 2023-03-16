@@ -5,6 +5,9 @@
 a{
     text-decoration: none;
 }
+br{
+    display: none;
+}
 
 :root {
     --main-color: #0065FC;
@@ -45,7 +48,10 @@ nav{
     margin-left: 0px;
     margin-bottom: auto;
     margin-right: auto;
-    height: 20px;
+    
+}
+.logo img{
+    width: 30%;
 }
 .menu{
     margin: 20px;
@@ -61,7 +67,7 @@ nav{
     color: #0065FC;
     border-top: #0065FC 4px solid;
     padding-top: 25px;
-    height: auto;
+   
 }
 
 h1{
@@ -74,7 +80,8 @@ h1{
 
     display: flex;
     flex-flow: row wrap;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+    padding-top: 20px; 
     
 }
 .search-bar img{
@@ -106,6 +113,24 @@ input{
 .bouton-searchbar{
 display: none;
 }
+/******** INFOS *******/ 
+
+.infos{
+    padding: 20px 0px 20px 0px;
+    
+    
+}
+.infos i{
+    border: #D9D9D9 1px solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    
+    
+}
+
+
 /************** FILTRES *************/
 
 .filtres{
@@ -125,11 +150,11 @@ button{
     background-color: #ffffff;
     border-radius: 30px;
     border:#D9D9D9 solid 1px; 
-    padding: 8px; 
+    padding: 10px; 
     font-size: 17px;    
 }
 button i{
-    padding-right: 8px;
+    padding-right: 10px;
     
 }
 button:hover{
@@ -282,7 +307,7 @@ button:hover{
 }
 .activités{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: center;
     justify-content: space-around;
     padding-bottom: 25px;
@@ -364,6 +389,7 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
     }
 
     .populaires-cards .card {
@@ -377,14 +403,40 @@ footer{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    .card-activités img{
-        height: 200px;
+    /*********** FILTRES ********/
+
+     .filtres{
+        display: flex;
+        flex-direction: column;
+     }
+
+    /*********** ACTIVITES ***********/
+    .activités{
+        display: flex;
+        flex-direction: row;
+        width: 100%;    
+    }
+    .card-activités{
+        width: 23%;
+        gap: 50px;
        
     }
+    .card-activités img{
+        height: 200px;
+        width: 100%;  
+       
+    }
+    /********** FOOTER ************/
+
     footer{
         display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
-        gap: 50px;
+        gap: 40px;
+        
+    }
+    .footer-1{
+       width: 100% 
     }
 }
 
@@ -401,39 +453,73 @@ footer{
         
     }
 /******** HEADER *******/
-    header{
+    .logo{
         display: flex;
-        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo img{
+
+width: 15%;
+padding-bottom: 20px;
+padding-top: 20px;
     }
     nav{
         display: flex;
         flex-direction: column;
-        background-color: red;
         width: 100%; 
-        
-        
+      
     }
-    nav img{
-        display: flex;
-        justify-content: center;
-    }
+    
    
     .menu{
         display: flex;
         justify-content: space-around;
-        border-bottom: #D9D9D9 2px solid;
-        padding-bottom: 25px;
+        
+        width: 100%;
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
         
      
     }
+    .menu a{
+        width: 100%;
+        border-bottom: #D9D9D9 2px solid;
+        padding-bottom: 20px;
+        margin: 0px;
+        text-align: center;
+        
+    }
+   
     .menu a:hover{
         color: #0065FC;
         border-bottom: #0065FC 2px solid;
         border-top: none;
-        padding-bottom: 25px;
-        height: auto;
+        margin: 0px;
+        padding: 0px;
+      
+        
+        
+       
     }
+    .title{
+        padding-left: 20px;
+        
+    }
+    .mobil{
+        display: block;
+    }
+    
     /******** SEARCH BAR ********/
+
+.search-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}    
 #button-search{
     display: none;
 }
@@ -445,9 +531,20 @@ footer{
 }
 .bouton-searchbar i{
     color: white;
-
-
+    margin: auto;
+    width: 50%;
+    text-align: center;
 }
+
+/********** INFOS *******************/
+
+.infos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
 /*********** FILTRES ***************/
 
 .filtres-icons{
@@ -463,42 +560,70 @@ footer{
   
 }
 /************ HEBERGEMENTS & POPULAIRES ********/
-
+.hebergements-and-populaires section{
+    border-radius: 0px;
+    background-color: none;
+}
 .populaires{
     order: 1;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    
+    
+}
+.color{
+    background-color:#D9D9D9;
 }
 .populaires-cards{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    
 }
+.populaires-cards .card{
+    width: 100%;
+}
+.card{
+    width: 100%;
+}
+
 .hebergements{
     order: 2;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
-    background-color: none;
     
 }
-.card{
-    width: 100%;
+
+
+/*********** ACTIVITES ****************/
+.activités{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
 }
-
-
-
-
+.card-activités{
+    width: 80%;
+    
+}
 .card-activités img{
-        height: 140px; 
+        height: 141px; 
+        width: 100%;
+       
 }
-.footer{
+
+
+
+footer{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        flex-wrap: wrap;
+        justify-content: lefts;
+       
            
+}
+.footer-1{
+    width: 100%;
 }
 
 }
