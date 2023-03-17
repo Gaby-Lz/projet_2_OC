@@ -11,19 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/ce41f47797.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="scroll-container">
     <div class="main-container">
         <header>
             
             <nav>
-                <a href="#" class="logo"><img src="src/Booki.png" alt="Logo Booki"></a>
+                <a href="#" class="logo"><img src="images/Booki.png" alt="Logo Booki"></a>
                 <div class="menu">
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
+                <a href="#hébergements" class="scroll-container">Hébergements</a>
+                <a href="#activités" class="scroll-container">Activités</a>
             </div>
          </nav>
     
@@ -35,13 +35,13 @@
                  <p>En plein centre-ville ou en pleine nature</p>
             </div>
 
-    <div class="search-bar">
+            <div class="search-bar">
+
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="search" id="site-search" name="search" placeholder="Marseille, France">
+                <input type="button" id="button-search" name="button-search" value="Rechercher">
         
-        <img src="src/icons/Vector-8.png" alt="icon de localisation">
-        <input type="search" id="site-search" name="search" placeholder="Marseille, France">
-        <input type="button" id="button-search" name="button-search" value="Rechercher">
-        
-        <button class="bouton-searchbar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="bouton-searchbar"><i class="fa-solid fa-magnifying-glass"></i></button>
         
     </div>
     <div class="filtres">
@@ -61,19 +61,17 @@
         <p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles <br class="mobil"> dans cette ville</p>
  
     </div>
-
-
     
        
             <div class="hebergements-and-populaires">
                 
-                <section class="hebergements color">
+                <section class="hebergements color" id="hébergements">
                     <div class="hebergements-title">
                         <h2>Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
                         <article class="card hebergement-card ">
-                            <img src="src/hébergements/fred-kleber.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="images/hébergements/fred-kleber.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel du port</h3>
@@ -90,7 +88,7 @@
                             </div>
                         </article>
                         <article class="card hebergement-card ">
-                            <img src="src/hébergements/febrian-zakaria.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="images/hébergements/febrian-zakaria.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel Chez Amina</h3>
@@ -107,7 +105,7 @@
                             </div>
                         </article>
                         <article class="card hebergement-card ">
-                            <img src="src/hébergements/reisetopia.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="images/hébergements/reisetopia.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel Les mouettes</h3>
@@ -124,7 +122,7 @@
                             </div>
                         </article>
                         <article class="card hebergement-card ">
-                            <img src="src/hébergements/annie-spratt.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="images/hébergements/annie-spratt.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel de la mer</h3>
@@ -141,7 +139,7 @@
                             </div>
                         </article>
                         <article class="card hebergement-card ">
-                            <img src="src/hébergements/marcus-loke.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="images/hébergements/marcus-loke.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Auberge La Canebière</h3>
@@ -158,7 +156,7 @@
                             </div>
                         </article>
                         <article class="card hebergement-card ">
-                            <img src="src/hébergements/nicate-lee.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="images/hébergements/nicate-lee.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Auberge le Panier</h3>
@@ -176,9 +174,11 @@
                         </article>
                         
                     </div>
+
                     <div class="hebergements-title">
                         <h3>Afficher plus</h3>
                     </div>
+
                 </section>
                 
                 <section class="populaires">
@@ -188,7 +188,7 @@
                     </div>
                     <div class="populaires-cards">
                         <article class="card ">
-                            <img src="src/plus_populaires/emile-guillemot.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="images/plus_populaires/emile-guillemot.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -205,7 +205,7 @@
                             </div>
                         </article>
                         <article class="card">
-                            <img src="src/plus_populaires/aw-creative.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="images/plus_populaires/aw-creative.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -222,7 +222,7 @@
                             </div>
                         </article>
                         <article class="card">
-                            <img src="src/plus_populaires/febrian-zakaria2.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="images/plus_populaires/febrian-zakaria2.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel Bleu et Blanc</h3>
@@ -243,35 +243,36 @@
             </div>
             <div>
                 <h2 class="activités-title">Activités à Marseille</h2>
-                <section class="activités">
+                <section class="activités" id="activités">
                     <div class="card-activités">
-                        <img src="src/activités/reno-laithienne.jpeg" alt="">
+                        <img src="images/activités/reno-laithienne.jpeg" alt="image du port de Marseille">
                         <div class="container-activités">
                         <h3 class="activités-subtitle">Vieux-Port</h3>
                         </div>
                     </div>
                     <div class="card-activités">
-                        <img src="src/activités/paul-hermann.jpeg" alt="">
+                        <img src="images/activités/paul-hermann.jpeg" alt="image du Fort de Pomègues">
                         <div class="container-activités">
                         <h3 class="activités-subtitle">Fort de Pomègues</h3>
                     </div>
                     </div>
                     <div class="card-activités">
-                        <img src="src/activités/kilyan-sockalingum.jpeg" alt="">
+                        <img src="images/activités/kilyan-sockalingum.jpeg" alt=" image du Parc national des Calanques">
                         <div class="container-activités">
                         <h3 class="activités-subtitle">Parc national des Calanques</h3>
                     </div>
                     </div>
                     <div class="card-activités">
-                        <img src="src/activités/florian-wehde.jpeg" alt="">
+                        <img src="images/activités/florian-wehde.jpeg" alt="Image de Notre-Dame-de-la-Garde">
                         <div class="container-activités">
-                        <h3 class="activités-subtitle">Notre-Dame-de-la-Garde</h3>
-                    </div>
-                    </div>
+                            <h3 class="activités-subtitle">Notre-Dame-de-la-Garde</h3>
+                        </div>
+                   </div>
 
                 </section>
             </div>
         </main>
+
         <footer>
             <div class="footer-1">
                 <a href="#" class="titre-footer">À propos</a>
