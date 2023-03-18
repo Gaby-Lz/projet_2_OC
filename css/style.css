@@ -457,8 +457,6 @@ footer{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
-    
     
     .main-container{
         
@@ -613,11 +611,11 @@ padding-top: 20px;
 .activités{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0 30px;
     justify-content: center;
 }
 .card-activités{
-    width: 90%;
+    width: 85%;
        
 }
 .card-activités img{
@@ -632,6 +630,7 @@ footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+      
            
 }
 .titre-footer{
