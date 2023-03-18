@@ -348,7 +348,7 @@ button:hover{
 
 footer{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     gap: 190px;
     background-color: #F2F2F2;
@@ -447,6 +447,12 @@ footer{
     .footer-1{
        width: 100% 
     }
+    .footer-1 a{
+        font-size: 16px;
+    }
+    .titre-footer{
+        font-size: 18px !important; 
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -489,8 +495,6 @@ padding-top: 20px;
         margin: 0px;
         padding-top: 10px;
         padding-bottom: 10px;
-        
-        
      
     }
     .menu a{
@@ -628,10 +632,15 @@ footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: lefts;        
+           
 }
+.titre-footer{
+        font-size: 18px !important; 
+    }
 .footer-1{
     width: 100%;
+    font-size: 16px;
 }
+
 
 }
