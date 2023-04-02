@@ -26,6 +26,7 @@ body {
 h2{
     font-size: 22px;
     padding: 0px;
+    padding-bottom:0px ;
     margin: 0px;
 }
 h3{
@@ -38,6 +39,11 @@ h3{
 .scroll-container{
    scroll-behavior: smooth;
    overflow-y: scroll; 
+}
+.noclass{
+    text-decoration: none;
+    color: black;
+    padding: 0px;
 }
 
 
@@ -71,8 +77,8 @@ nav{
     color: black;
 }
 .menu a:hover{
-    color: #0065FC;
-    border-top: #0065FC 4px solid;
+    color: var(--main-color);
+    border-top: var(--main-color) 4px solid;
     padding-top: 25px;
    
 }
@@ -80,36 +86,40 @@ h1{
     font-size: 22px;
     margin-bottom: 5px;
 }
-/*********** SEARCH BAR ********/
+/*********** SEARCH BAR ************/
 
 .search-bar{
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    justify-content: baseline;
     padding-bottom: 20px; 
-    padding-top: 20px; 
+    padding-top: 20px;
     
 }
 .search-bar i{
     padding: 20px;
-    background-color:#F2F2F2;
+    background-color:var(--main-bg-color);
     color: black;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     object-fit: cover;
+   
 }
 #site-search{
-    border: #F2F2F2 solid 1px;
+    border: var(--main-bg-color) solid 1px;
     font-weight: bold;
     color: black;
+    font-size: 18px;
    
 }
 #button-search{
    
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: white;
-    border-radius: 0px 20px 20px 0px;
-    font-weight: bold;  
+    border-radius: 0px 15px 15px 0px;
+    font-weight: bold; 
+    font-size: 18px; 
 
 }
 
@@ -117,6 +127,7 @@ input{
     border: none;
     padding: 20px;
 }
+
 .bouton-searchbar{
 display: none;
 }
@@ -124,9 +135,17 @@ display: none;
 /******** INFOS *******/ 
 
 .infos{
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    width: 100%;
+    margin: 10px;
     
-    
+}
+.infos p{
+    padding-left: 9px;
+    width: 90%;
 }
 .infos i{
     border: #D9D9D9 1px solid;
@@ -134,6 +153,7 @@ display: none;
     height: 20px;
     width: 20px;
     text-align: center;  
+     
 }
 
 
@@ -142,11 +162,12 @@ display: none;
 .filtres{
     display: flex;
     flex-flow: row wrap;
+    justify-items: baseline;
     gap: 20px;
     padding-top: 20px;
 }
 .filtres_title{
-    padding: 8px;
+    padding: 12px;
 }
 .filtres-icons{
     display: flex;
@@ -154,10 +175,11 @@ display: none;
 }
 button{
     background-color: #ffffff;
-    border-radius: 30px;
+    border-radius: 25px;
     border:#D9D9D9 solid 1px; 
-    padding: 10px; 
-    font-size: 17px;    
+    padding: 15px; 
+    font-size: 17px;  
+    font-weight: bold;  
 }
 button i{
     padding-right: 10px;
@@ -205,6 +227,7 @@ button:hover{
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -307,13 +330,13 @@ button:hover{
     padding-bottom: 10px;
 }
 .activités-subtitle{
-    padding: 15px;
+    padding: 10px;
+    padding-left: 5px;
     font-size: 16px;
 }
 .activités{
     display: flex;
     flex-direction: row;
-    
     justify-content: space-around;
     padding-bottom: 25px;
     gap: 20px;
@@ -412,19 +435,29 @@ footer{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .main-container {
+       
+        padding: 0 40px;
+      
+    }
     /*********** FILTRES ********/
 
      .filtres{
         display: flex;
         flex-direction: column;
      }
+     button{
+        font-size: 16px; 
+     }
 
     /*********** ACTIVITES ***********/
     .activités{
         display: flex;
         flex-direction: row;
-        width: 100%;    
+        width: 100%;   
+        padding: 2px; 
     }
+   
     .card-activités{
         width: 23%;
         gap: 50px;
@@ -434,6 +467,9 @@ footer{
         height: 200px;
         width: 100%;  
        
+    }
+    .container-activités{
+        padding: 2px;
     }
     /********** FOOTER ************/
 
@@ -457,14 +493,20 @@ footer{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
     .main-container{
-        
-        width: 100%;
-        margin: 0px;
         padding: 0px;
+        margin: 0px;
+        width: 100%;
         
     }
+  
 /******** HEADER *******/
     .logo{
         display: flex;
@@ -473,9 +515,9 @@ footer{
     }
     .logo img{
 
-width: 15%;
-padding-bottom: 20px;
-padding-top: 20px;
+     width: 15%;
+     padding-bottom: 20px;
+     padding-top: 20px;
     }
     nav{
         display: flex;
@@ -488,9 +530,10 @@ padding-top: 20px;
     .menu{
         display: flex;
         justify-content: space-around;
-        
         width: 100%;
         margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
         padding-top: 10px;
         padding-bottom: 10px;
      
@@ -524,6 +567,7 @@ padding-top: 20px;
 .search-bar{
     width: 100%;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
    
 }    
@@ -534,11 +578,11 @@ padding-top: 20px;
     display: block;
     border-radius: 0px 15px 15px 0px;
     padding: 1px;
-   background-color: #0065FC;
+    background-color: var(--main-color);
 }
 .bouton-searchbar i{
-    background-color: #0065FC;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
     margin: auto;
      border-radius: 0px 15px 15px 0px;
     text-align: center;
@@ -564,13 +608,23 @@ padding-top: 20px;
     
 }
 .filtres-icons button{
-    padding: 15px;
     width: 40%;
   
 }
+button{
+    font-size: 14px; 
+ }
+/**************** infos *****************/
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /************ HEBERGEMENTS & POPULAIRES ********/
 .hebergements-and-populaires section{
-    border-radius: 0px;
+   border-radius: 0px;
    background-color: var(--main-bg-color);
 
 }
@@ -578,6 +632,7 @@ padding-top: 20px;
     order: 1;
     display: flex;
     flex-direction: column;
+    
     
     
 }
