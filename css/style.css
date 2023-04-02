@@ -92,7 +92,7 @@ h1{
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: baseline;
+   
     padding-bottom: 20px; 
     padding-top: 20px;
     
