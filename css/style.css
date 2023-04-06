@@ -424,7 +424,7 @@ footer{
         
     }
 
-    .populaires-cards .card {
+    .populaires-cards a {
         width: 30%;
     }
 
@@ -569,10 +569,15 @@ footer{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    padding: 5px;
    
 }    
 #button-search{
     display: none;
+    padding: 5px;
+}
+#site-search{
+    padding: 5px;
 }
 .bouton-searchbar{
     display: block;
@@ -586,6 +591,10 @@ footer{
     margin: auto;
      border-radius: 0px 15px 15px 0px;
     text-align: center;
+    padding: 16px;
+}
+.fa-solid.fa-location-dot{
+    padding: 16px;
 }
 
 /********** INFOS *******************/
@@ -612,7 +621,8 @@ footer{
   
 }
 button{
-    font-size: 14px; 
+    font-size: 14px;
+    padding: 8px; 
  }
 /**************** infos *****************/
 
@@ -644,7 +654,7 @@ button{
     flex-direction: column;
     
 }
-.populaires-cards .card{
+.populaires-cards a {
     width: 100%;
 }
 .card{
@@ -663,11 +673,11 @@ button{
 
 /*********** ACTIVITES ****************/
 
-.activités{
+.activités {
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
     justify-content: center;
+    align-items: center;
 }
 .card-activités{
     width: 85%;
@@ -685,10 +695,7 @@ footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding-left: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 0px;
+        padding: 0px;
       
            
 }
@@ -698,6 +705,7 @@ footer{
 .footer-1{
     width: 100%;
     font-size: 16px;
+    padding: 5px;
 }
 
 
