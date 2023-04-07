@@ -471,6 +471,9 @@ footer{
     .container-activités{
         padding: 2px;
     }
+    .activités-subtitle{
+        padding: 10px;
+    }
     /********** FOOTER ************/
 
     footer{
